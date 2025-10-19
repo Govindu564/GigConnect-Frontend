@@ -1,7 +1,11 @@
 import React from "react";
 import { Star } from "lucide-react"; // for rating stars
+import { useNavigate } from "react-router-dom";
+
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <aside className="bg-white min-h-screen shadow-md p-6 flex flex-col items-center w-full">
       {/* Profile Picture */}
@@ -14,20 +18,14 @@ export default function Footer() {
       {/* User Info */}
       <h2 className="text-xl font-semibold mt-4">Alex Johnson</h2>
       <p className="text-gray-600 text-sm">UI/UX Designer</p>
+          <div
+      className="flex items-center gap-1 mt-3 cursor-pointer"
+                  onClick={() => navigate("/reviews")}>
 
-      {/* Rating Section */}
-      <div className="flex items-center gap-1 mt-3">
-        {[...Array(5)].map((_, i) => (
-          <Star
-            key={i}
-            size={18}
-            fill={i < 4 ? "#facc15" : "none"}
-            color="#facc15"
-          />
-        ))}
-        <span className="text-gray-500 text-sm ml-1">(4.0)</span>
+            <p className="text-gray-500">
+              ⭐ 4.5 (24 reviews)
+            </p>
       </div>
-
       {/* Description */}
       <div className="w-full mt-6">
         <h3 className="text-left text-gray-200 font-semibold mb-2">Description</h3>
