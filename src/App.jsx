@@ -1,12 +1,9 @@
-import { useState } from "react";
-import "./App.css";
+import React from 'react';
+import ClientFreelancerChat from './components/sidebar';
 
 function App() {
   return (
-    <>
-      <h1>Hello! Zaalima Coders14</h1>
-      <h3>How are you guy's</h3>
-    </>
+    <ClientFreelancerChat />
   );
 }
 
