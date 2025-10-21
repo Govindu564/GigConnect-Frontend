@@ -1,5 +1,4 @@
 import React from "react";
-import { Star } from "lucide-react"; // for rating stars
 import { useNavigate } from "react-router-dom";
 
 
@@ -37,7 +36,7 @@ export default function Footer() {
 
       {/* Contact / Action Buttons */}
       <div className="mt-6 flex flex-col gap-3 w-full">
-        <button className="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">
+        <button className="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition" onClick={() => navigate("/pform")}>
           Pay
         </button>
       </div>
