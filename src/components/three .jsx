@@ -39,6 +39,7 @@ export default function Footer() {
         <button className="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition" onClick={() => navigate("/pform")}>
           Pay
         </button>
+
       </div>
 
       {/* Files Section */}
